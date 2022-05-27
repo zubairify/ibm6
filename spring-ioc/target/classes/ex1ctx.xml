@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Instantiate bean with default constructor -->
+	<!-- <bean id="hi" class="ex1.Hello" /> -->
+	
+	<!-- Instantiate bean with parameterised constructor -->
+	<!-- <bean id="hi" class="ex1.Hello">
+		<constructor-arg value="Hello Spring" />	 constructor value injection
+	</bean> -->
+	
+	<!-- Instantiate bean with default constructor, setting value using setter method -->
+	<bean id="hi" class="ex1.Hello">
+		<property name="greeting" value="Hello Spring" />  <!-- Setter value injection -->
+	</bean>
+</beans>
